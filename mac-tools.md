@@ -139,7 +139,7 @@ command -v python3 >/dev/null 2>&1 && echo "✅ Python: $(python3 --version)" ||
 command -v docker >/dev/null 2>&1 && echo "✅ Docker: $(docker --version)" || echo "❌ Docker not found"
 command -v git >/dev/null 2>&1 && echo "✅ Git: $(git --version)" || echo "❌ Git not found"
 command -v kubectl >/dev/null 2>&1 && echo "✅ kubectl: $(kubectl version --client --short 2>/dev/null)" || echo "⚠️  kubectl not found (optional)"
-command -v opentofu >/dev/null 2>&1 && echo "✅ OpenTofu: $(tofu --version | head -n 1)" || echo "⚠️  OpenTofu not found (optional)"
+command -v tofu >/dev/null 2>&1 && echo "✅ OpenTofu: $(tofu --version | head -n 1)" || echo "⚠️  OpenTofu not found (optional)"
 command -v aws >/dev/null 2>&1 && echo "✅ AWS CLI: $(aws --version)" || echo "⚠️  AWS CLI not found (optional)"
 
 echo ""

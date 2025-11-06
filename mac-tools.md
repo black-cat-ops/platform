@@ -112,8 +112,8 @@ brew install virtualenv
 ### 12. Create Project Virtual Environment
 ```bash
 # Navigate to your project directory
-mkdir animal-picture-service
-cd animal-picture-service
+mkdir {custom}-service
+cd {custom}-service
 
 # Create virtual environment
 python3 -m venv venv
@@ -139,7 +139,7 @@ command -v python3 >/dev/null 2>&1 && echo "✅ Python: $(python3 --version)" ||
 command -v docker >/dev/null 2>&1 && echo "✅ Docker: $(docker --version)" || echo "❌ Docker not found"
 command -v git >/dev/null 2>&1 && echo "✅ Git: $(git --version)" || echo "❌ Git not found"
 command -v kubectl >/dev/null 2>&1 && echo "✅ kubectl: $(kubectl version --client --short 2>/dev/null)" || echo "⚠️  kubectl not found (optional)"
-command -v terraform >/dev/null 2>&1 && echo "✅ Terraform: $(terraform --version | head -n 1)" || echo "⚠️  Terraform not found (optional)"
+command -v opentofu >/dev/null 2>&1 && echo "✅ OpenTofu: $(tofu --version | head -n 1)" || echo "⚠️  OpenTofu not found (optional)"
 command -v aws >/dev/null 2>&1 && echo "✅ AWS CLI: $(aws --version)" || echo "⚠️  AWS CLI not found (optional)"
 
 echo ""
@@ -151,8 +151,8 @@ docker ps >/dev/null 2>&1 && echo "✅ Docker daemon is running" || echo "❌ Do
 
 ```bash
 # 1. Create project directory
-mkdir -p ~/projects/animal-picture-service
-cd ~/projects/animal-picture-service
+mkdir -p ~/projects/{custom}-service
+cd ~/projects/{custom}-service
 
 # 2. Create virtual environment
 python3 -m venv venv
